@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>アンケート調査</title>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+    <div class="row">
+        <div class="col-sm-10">
+            <h1>アンケート<br>”あなたも鬼になりませんか？”</h1>
+        </div>
+
+        <div class="col-sm-2">
+            <a href="#">HOMEへ戻る</a>
+        </div>
+    </header>
+
+    <div class="form-group">
+    <form>
+
+    <p>この度は決鬼集会にご参加下さり誠にありがとうございました。<br>
+        恐れ入りますが、 以下のフォームにご記入頂き、伝令して頂けると幸いです。</p>  
+    <label for="name">お名前 <span class="badge bg-danger">必須事項</span></label>
+    <input type="text" id="name" name="name" class="form-control" placeholder="例）鬼舞辻無惨様" required>
+    <input type="reset" value="リセット">
+
+    </form>
+    </div>
+
+<div class="form-group">
+    <form>
+    <label for="job">求一・鬼殺隊の階級</label>
+    <select id="job" name="job" class="form-control">
+        
+        <option value=" ">選択してください</option>
+        <option value="柱">柱（はしら）</option>
+        <option value="甲">甲（きのえ）</option>
+        <option value="乙">乙（きのと）</option>
+        <option value="丙">丙（ひのえ）</option>
+        <option value="それ以下">それ以下の雑魚</option>
+        <input type="reset" value="リセット">
+
+    </form>
+    </select>
+
+    <div class="form-group">
+    <form>
+    <label>求二・私たちの情報をどこで嗅ぎつけましたか？（複数回答可）</label>
+
+        <div class="form-check">
+        <input type="checkbox" id="q1-1" name="q1" value="ラジオ" class="form-control-input">
+        <label for="q1-1" class="form-check-label">ラジオ</label>
+        </div>
+
+        <div class="form-check">
+        <input type="checkbox" id="q1-2" name="q2" value="烏" class="form-control-input">
+        <label for="q1-2" class="form-check-label">カラス</label>
+        </div>
+
+        <div class="form-check">
+        <input type="checkbox" id="q1-3" name="q3" value="電話" class="form-control-input">
+        <label for="q1-3" class="form-check-label">電話</label>
+        </div>
+
+        <div class="form-check">
+        <input type="checkbox" id="q1-4" name="q4" value="噂" class="form-control-input">
+        <label for="q1-4" class="form-check-label">家族・友人・知人・鬼に</label>
+        </div>
+
+        <div class="form-check">
+        <input type="checkbox" id="q1-5" name="check" value="勧誘" class="form-control-input">
+        <label for="q1-5" class="form-check-label">鬼に勧誘されて</label>
+        </div>
+        <input type="reset" value="リセット">
+    
+    </form>
+    </div>
+
+    <div class="form-group">
+    <form>
+    <label class="d-block">求三・お前も鬼になりませんか？</label>
+
+    <div class="form-check form-check-inline">
+        <input type="radio" name="q2" id="q2-1" value="1" class="form-check-input">
+        <label for="q2-1" class=""form-check-label>ならない</label>
+    </div>
+
+    <div class="form-check form-check-inline">
+        <input type="radio" name="q2" id="q2-2" value="2" class="form-check-input">
+        <label for="q2-2" class=""form-check-label>少しだけなりたい</label>
+    </div>
+
+    <div class="form-check form-check-inline">
+        <input type="radio" name="q2" id="q2-3" value="3" class="form-check-input">
+        <label for="q2-3" class=""form-check-label>なりたい</label>
+    </div>
+
+    <div class="form-check form-check-inline">
+        <input type="radio" name="q2" id="q2-4" value="4" class="form-check-input">
+        <label for="q2-4" class=""form-check-label>なる</label>
+    </div>
+    
+</div>
+
+    <input type="reset" value="リセット">
+    </form>
+
+<div class="form-group">
+    <form>
+
+    <label for="message">何がまずい？言ってみろ（ご意見）</label>
+    <textarea type="message" name="message" id="message" rows="6" class="form-control" placeholder="思考が・・・読めるのか？　まずい・・・"></textarea>
+
+    <input type="reset" value="リセット">
+    </form>
+</div>
+<button type="submit" class="btn btn-dark">伝令する</button>
+
+</div>
+
+</div>
+
+</body>
+</html>
+
+
